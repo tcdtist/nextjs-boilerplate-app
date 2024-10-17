@@ -1,10 +1,11 @@
-import { createEnv } from '@t3-oss/env-nextjs';
+import { createEnv } from '@t3-oss/env-nextjs'
+
 // import { z } from 'zod';
 
 const skipValidation =
   !!process.env.SKIP_ENV_VALIDATION &&
   process.env.SKIP_ENV_VALIDATION !== 'false' &&
-  process.env.SKIP_ENV_VALIDATION !== '0';
+  process.env.SKIP_ENV_VALIDATION !== '0'
 
 export const env = createEnv({
   skipValidation,
@@ -14,5 +15,5 @@ export const env = createEnv({
   },
   runtimeEnv: {
     // NEXT_PUBLIC_EXAMPLE: process.env.NEXT_PUBLIC_EXAMPLE
-  }
-});
+  },
+})

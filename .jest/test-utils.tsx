@@ -1,20 +1,21 @@
-import { render, RenderOptions } from '@testing-library/react';
-import { ReactElement } from 'react';
+import { ReactElement } from 'react'
+
+import { RenderOptions, render } from '@testing-library/react'
 
 type ProvidersProps = {
-  readonly children?: any;
-};
+  readonly children?: any
+}
 
 // Add in any providers here if necessary:
 // (ReduxProvider, ThemeProvider, etc)
 const Providers = ({ children }: ProvidersProps) => {
-  return children;
-};
+  return children
+}
 
 const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>) =>
-  render(ui, { wrapper: Providers, ...options });
+  render(ui, { wrapper: Providers, ...options })
 
 // re-export everything
-export * from '@testing-library/react';
+export * from '@testing-library/react'
 // override render method
-export { customRender as render };
+export { customRender as render }

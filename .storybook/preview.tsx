@@ -1,8 +1,6 @@
-import React from 'react';
-import type { Preview } from '@storybook/react';
-import * as NextImage from 'next/image';
+import type { Preview } from '@storybook/react'
 
-import '../src/styles/globals.css';
+import '../src/styles/globals.css'
 
 const preview: Preview = {
   parameters: {
@@ -10,13 +8,13 @@ const preview: Preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/
-      }
-    }
-  }
-};
+        date: /Date$/,
+      },
+    },
+  },
+}
 
 // This is the place responsible for grouping all decorators from the storybook app
-export const decorators = [];
+export const decorators = []
 
-export default preview;
+export default preview

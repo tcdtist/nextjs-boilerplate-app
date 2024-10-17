@@ -5,12 +5,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['var(--font-primary)']
-      }
-    }
+        primary: ['var(--font-primary)'],
+      },
+    },
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-  plugins: [require('tailwind-scrollbar')]
-};
+  plugins: [require('tailwind-scrollbar')],
+}

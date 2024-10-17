@@ -1,5 +1,5 @@
-const component = require('./component');
+const component = require('./component')
 
 module.exports = {
-  component
-};
+  component,
+}

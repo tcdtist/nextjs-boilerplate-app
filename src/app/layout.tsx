@@ -1,24 +1,24 @@
-import '@/styles/globals.css';
+import { ReactNode } from 'react'
 
-import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ReactNode } from 'react';
+import { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-import { MainProvider } from '@/components/providers/MainProvider';
-import { MainLayout } from '@/components/templates/MainLayout';
+import { MainProvider } from '@/components/providers/MainProvider'
+import { MainLayout } from '@/components/templates/MainLayout'
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils'
+import '@/styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-primary' })
 
 export const metadata: Metadata = {
   title: 'Home page | Nextjs boilerplate',
   description:
-    '🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, React Testing Library, PostCSS, Tailwind CSS, Storybook, Plop, GH actions.'
-};
+    '🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, React Testing Library, PostCSS, Tailwind CSS, Storybook, Plop, GH actions.',
+}
 
 interface RootLayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const RootLayout = ({ children }: RootLayoutProps) => {
@@ -32,7 +32,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         </MainProvider>
       </body>
     </html>
-  );
-};
+  )
+}
 
-export default RootLayout;
+export default RootLayout

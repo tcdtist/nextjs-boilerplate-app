@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 
 type ExampleProps = {
-  children?: ReactNode;
-};
+  children?: ReactNode
+}
 
 export const Example = ({ children }: ExampleProps) => (
   <div>
     <h1>{children}</h1>
   </div>
-);
+)

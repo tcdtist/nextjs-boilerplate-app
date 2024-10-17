@@ -1,1 +1,1 @@
-export * from './MainProvider';
+export * from './MainProvider'

@@ -1,6 +1,6 @@
-import { render, screen } from '@/tests/test-utils';
+import { render, screen } from '@/tests/test-utils'
 
-import { MainLayout } from '.';
+import { MainLayout } from '.'
 
 describe('MainLayout', () => {
   it('should render the children components', () => {
@@ -8,9 +8,9 @@ describe('MainLayout', () => {
       <MainLayout>
         <h1>MainLayout children</h1>
       </MainLayout>
-    );
+    )
 
     // Assert
-    screen.getByRole('heading', { name: /MainLayout children/i });
-  });
-});
+    screen.getByRole('heading', { name: /MainLayout children/i })
+  })
+})

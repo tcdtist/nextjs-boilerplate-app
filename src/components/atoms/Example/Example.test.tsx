@@ -1,12 +1,12 @@
-import { render, screen } from '@/tests/test-utils';
+import { render, screen } from '@/tests/test-utils'
 
-import { Example } from '.';
+import { Example } from '.'
 
 describe('Example', () => {
   it('should render the heading', () => {
-    render(<Example>Example</Example>);
+    render(<Example>Example</Example>)
 
     // Assert
-    screen.getByRole('heading', { name: /Example/i });
-  });
-});
+    screen.getByRole('heading', { name: /Example/i })
+  })
+})

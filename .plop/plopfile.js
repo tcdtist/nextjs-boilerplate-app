@@ -1,6 +1,6 @@
-const { component } = require('./settings');
+const { component } = require('./settings')
 
 // Add here more generators
 module.exports = function (plop) {
-  plop.setGenerator('component', component);
-};
+  plop.setGenerator('component', component)
+}

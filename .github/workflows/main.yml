@@ -17,18 +17,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup yarn
+        uses: yarn/action-setup@v2
         with:
-          version: 8.10.2
+          version: 1.22.22
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
       - name: Run prettier check
-        run: pnpm prettier:check
+        run: yarn prettier:check
 
   eslint-check:
     name: Eslint check
@@ -38,18 +38,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup yarn
+        uses: yarn/action-setup@v2
         with:
-          version: 8.10.2
+          version: 1.22.22
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
       - name: Run eslint check
-        run: pnpm eslint:format
+        run: yarn eslint:format
 
   jest-check:
     name: Tests - jest
@@ -60,18 +60,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup yarn
+        uses: yarn/action-setup@v2
         with:
-          version: 8.10.2
+          version: 1.22.22
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
       - name: Run tests
-        run: pnpm test:ci
+        run: yarn test:ci
         env:
           CI: true
 
@@ -84,18 +84,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup yarn
+        uses: yarn/action-setup@v2
         with:
-          version: 8.10.2
+          version: 1.22.22
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
       - name: Build nextjs
-        run: pnpm build
+        run: yarn build
         env:
           CI: true
 
@@ -108,17 +108,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup yarn
+        uses: yarn/action-setup@v2
         with:
-          version: 8.10.2
+          version: 1.22.22
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
       - name: Build storybook
-        run: pnpm storybook:build
+        run: yarn storybook:build
         env:
           CI: true

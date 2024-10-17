@@ -37,34 +37,34 @@ All tests are collocated with the source code inside the same directory. So, it 
 
 ## :information_source: How To Use
 
-To use this template you can simply click in **[Use this template](https://github.com/hadrysm/nextjs-boilerplate/generate)** or create your Next.js app based on this template by running:
+To use this template you can simply click in **[Use this template](https://github.com/tcdtist/typescript-nextjs14-boilerplate/generate)** or create your Next.js app based on this template by running:
 
 ```bash
-pnpm create next-app -e https://github.com/hadrysm/nextjs-boilerplate
+npm create next-app -e https://github.com/tcdtist/typescript-nextjs14-boilerplate
 ```
 
 ## 🚀 Deploy to production
 
 Install command on Vercel:
 
-```
-corepack use pnpm@`pnpm -v` && pnpm i
+```bash
+yarn
 ```
 
 You can see the results locally in production mode with:
 
 ```shell
-pnpm build
+yarn build
 ```
 
 ```shell
-pnpm start
+yarn start
 ```
 
 ## :gear: Generating components
 
 ```bash
-pnpm generate Button
+yarn generate Button
 ```
 
 Result (if you chose an atom component):
@@ -94,4 +94,4 @@ See [LICENSE](LICENSE) for more information.
 
 ---
 
-Made with much :heart: and :muscle: by Mateusz Hadryś :blush: <a href="https://www.linkedin.com/in/mateusz-hadry%C5%9B/">My Contact</a>
+Made with much :heart: and :muscle: by Chi Thanh Dang :blush: <a href="https://www.linkedin.com/in/tcdtist/">My Contact</a>
