@@ -23,6 +23,9 @@
   "engines": {
     "node": ">=20.18.0"
   },
+  "resolutions": {
+    "babel-preset-current-node-syntax": "1.0.0"
+  },
   "packageManager": "yarn@1.22.22",
   "dependencies": {
     "@t3-oss/env-nextjs": "0.11.1",
@@ -52,7 +55,7 @@
     "@typescript-eslint/eslint-plugin": "7.0.0",
     "@typescript-eslint/parser": "6.21.0",
     "autoprefixer": "10.4.20",
-    "babel-jest": "29.7.0",
+    "babel-jest": "^29.7.0",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.9",
     "eslint-config-prettier": "9.1.0",
