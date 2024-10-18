@@ -21,7 +21,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.18.0'
 
       - name: Install dependencies
         run: yarn install
@@ -41,7 +41,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.18.0'
 
       - name: Install dependencies
         run: yarn install
@@ -62,7 +62,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.18.0'
 
       - name: Install dependencies
         run: yarn install
@@ -85,7 +85,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.18.0'
 
       - name: Install dependencies
         run: yarn install
@@ -108,7 +108,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.18.0'
 
       - name: Install dependencies
         run: yarn install
