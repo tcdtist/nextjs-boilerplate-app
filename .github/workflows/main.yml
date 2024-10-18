@@ -17,16 +17,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: yarn/action-setup@v2
-        with:
-          version: 1.22.22
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+
       - name: Install dependencies
         run: yarn install
+
       - name: Run prettier check
         run: yarn prettier:check
 
@@ -38,16 +37,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: yarn/action-setup@v2
-        with:
-          version: 1.22.22
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+
       - name: Install dependencies
         run: yarn install
+
       - name: Run eslint check
         run: yarn eslint:format
 
@@ -60,16 +58,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: yarn/action-setup@v2
-        with:
-          version: 1.22.22
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+
       - name: Install dependencies
         run: yarn install
+
       - name: Run tests
         run: yarn test:ci
         env:
@@ -84,16 +81,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: yarn/action-setup@v2
-        with:
-          version: 1.22.22
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+
       - name: Install dependencies
         run: yarn install
+
       - name: Build nextjs
         run: yarn build
         env:
@@ -108,16 +104,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: yarn/action-setup@v2
-        with:
-          version: 1.22.22
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+
       - name: Install dependencies
         run: yarn install
+
       - name: Build storybook
         run: yarn storybook:build
         env:
